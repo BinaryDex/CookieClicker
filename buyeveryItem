@@ -1,0 +1,16 @@
+/*
+Made By: @Dex
+Description: Buys a specific amount of every item.
+*/
+
+var input;
+input = prompt("Enter how many you want to buy of every item")
+    if (input === null) {
+        alert("Cancelled")
+    }
+    else if (input === "") {
+        alert("Please Enter Something")
+    }
+    else {
+        for (var i in Game.Objects){Game.Objects[i].buy(input);}
+    }
