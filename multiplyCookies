@@ -1,0 +1,15 @@
+/*
+Made By: @Dex
+Description: Multiplies your cookies by a specific amount
+*/
+
+var input;
+input = prompt("Enter how many times you want to multiply your cookies")
+    if (input === null) {
+        alert("Cancelled")
+    }
+    else if (input === "") {
+        alert("Please Enter Something")
+    }
+    else {  Game.cookies*=input;Game.cookiesEarned*=input;
+    }
